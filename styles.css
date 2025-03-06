@@ -176,3 +176,74 @@ iframe {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* File Sharing Section */
+.file-sharing {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.file-sharing h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.file-sharing p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ffaf7b;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    background: #ffaf7b;
+    color: black;
+}
