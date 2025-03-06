@@ -8,110 +8,14 @@
     <meta name="author" content="Sigmi Team">
 
     <title>Sigmi</title>
-    <style>
-        body {
-            font-family: "Poppins", Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            width: 100%;
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-        }
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        nav {
-            margin: 30px 0;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 25px;
-            transition: all 0.3s ease-in-out;
-            font-size: 1.2em;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        a:hover {
-            background: #ffaf7b;
-            color: #333;
-            transform: scale(1.1);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-        }
-        .search-container {
-            margin: 30px 0;
-            text-align: center;
-        }
-        input {
-            padding: 10px;
-            width: 300px;
-            font-size: 1.2rem;
-            border-radius: 20px;
-            border: none;
-            outline: none;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.6);
-            color: #fff;
-        }
-        .games-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 900px;
-            justify-content: center;
-        }
-        .game {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            transition: 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        .game:hover {
-            background: #ffaf7b;
-            color: #333;
-            transform: scale(1.05);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-        }
-        footer {
-            margin-top: auto;
-            text-align: center;
-            padding: 20px 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            width: 100%;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Sigmi Homepage</h1>
         <p>Open up the games you opp!</p>
     </header>
+
     <nav>
         <a href="https://sigmasigmatoiletedge.github.io/" target="_blank">Nettle Web</a>
         <a href="https://ezunblocktheopps.github.io/ezunblocktheopp.github.io/" target="_blank">CSGO Clicker</a>
@@ -122,36 +26,30 @@
     </nav>
 
     <!-- Search Bar -->
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Search for a game..." onkeyup="filterGames()">
-    </div>
+    <input type="text" id="searchBar" placeholder="Search games..." onkeyup="searchGames()">
 
-    <!-- Games Section -->
-    <div class="games-container" id="games-list">
-        <div class="game"><a href="cookieclicker.html">Cookie Clicker</a></div>
+    <!-- Game Section -->
+    <section class="games-container">
+        <div class="game"><a href="https://sigmasigmatoiletedge.github.io/" target="_blank">Nettle Web</a></div>
         <div class="game"><a href="https://ezunblocktheopps.github.io/ezunblocktheopp.github.io/" target="_blank">CSGO Clicker</a></div>
         <div class="game"><a href="https://geography-lessons.github.io/" target="_blank">Geography Games</a></div>
         <div class="game"><a href="https://ezunblocktheopps.github.io/Website-downloader/" target="_blank">Website Downloader</a></div>
-        <div class="game"><a href="https://sigmasigmatoiletedge.github.io/" target="_blank">Nettle Web</a></div>
-    </div>
+        <div class="game"><a href="cookieclicker.html" target="_blank">Cookie Clicker</a></div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Sigmi Team | Designed with Sigmi Rizz</p>
     </footer>
 
     <script>
-        function filterGames() {
-            let input = document.getElementById('search').value.toLowerCase();
-            let games = document.getElementsByClassName('game');
+        function searchGames() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let games = document.querySelectorAll('.game');
 
-            for (let i = 0; i < games.length; i++) {
-                let game = games[i].innerText.toLowerCase();
-                if (game.includes(input)) {
-                    games[i].style.display = "block";
-                } else {
-                    games[i].style.display = "none";
-                }
-            }
+            games.forEach(game => {
+                let text = game.textContent.toLowerCase();
+                game.style.display = text.includes(input) ? "block" : "none";
+            });
         }
     </script>
 </body>
