@@ -48,6 +48,23 @@
     <!-- Search Bar -->
     <input type="text" id="searchBar" placeholder="Search games..." onkeyup="searchGames()">
 
+    <section class="game-request-container">
+    <h2>Request a Game</h2>
+    <form id="gameRequestForm">
+        <label for="gameName">Game Name:</label>
+        <input type="text" id="gameName" name="gameName" placeholder="Enter game name..." required>
+
+        <label for="gameLink">Game Link (optional):</label>
+        <input type="url" id="gameLink" name="gameLink" placeholder="Provide a game link...">
+
+        <label for="reason">Why do you want this game? (optional):</label>
+        <textarea id="reason" name="reason" placeholder="Tell us why you love this game..."></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+    <p id="requestStatus"></p>
+</section>
+
     <!-- Game Section -->
     <section class="games-container">
         <div class="game"><a href="https://sigmasigmatoiletedge.github.io/" target="_blank">Nettle Web</a></div>
