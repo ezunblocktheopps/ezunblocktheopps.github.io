@@ -10,6 +10,51 @@ body {
     align-items: center;
 }
 
+.game-request-container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.game-request-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#gameRequestForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#gameRequestForm input,
+#gameRequestForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#gameRequestForm button {
+    padding: 10px 15px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#gameRequestForm button:hover {
+    background-color: #026aa7;
+}
+
+#requestStatus {
+    margin-top: 10px;
+    color: green;
+}
+
 /* Header */
 header {
     text-align: center;
