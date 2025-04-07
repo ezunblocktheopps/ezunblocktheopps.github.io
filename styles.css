@@ -3,25 +3,25 @@ body {
     font-family: "Poppins", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
+    background: linear-gradient(to bottom, #4a2c64, #823C85, #a94a9c);
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-
 .game-request-container {
     margin: 20px 0;
     padding: 9.8px;
-    border: 2px solid #130808;
+    border: 2px solid #582459;
     border-radius: 22.6px;
+    background-color: rgba(130, 60, 133, 0.1);
 }
 
 .game-request-container h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #d1a3d8;
 }
 
 #gameRequestForm label {
@@ -35,13 +35,15 @@ body {
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #823C85;
     border-radius: 5px;
+    background-color: rgba(130, 60, 133, 0.1);
+    color: #fff;
 }
 
 #gameRequestForm button {
     padding: 10px 15px;
-    background-color: #0288d1;
+    background-color: #823C85;
     color: white;
     border: none;
     border-radius: 5px;
@@ -49,7 +51,7 @@ body {
 }
 
 #gameRequestForm button:hover {
-    background-color: #026aa7;
+    background-color: #652066;
 }
 
 #requestStatus {
@@ -61,9 +63,9 @@ body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(130, 60, 133, 0.6);
     width: 100%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px rgba(130, 60, 133, 0.4);
 }
 
 header h1 {
@@ -74,25 +76,26 @@ header h1 {
 header p {
     font-size: 1.2rem;
     margin-top: 10px;
+    color: #d1a3d8;
 }
-
 
 a {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(130, 60, 133, 0.6);
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
     font-size: 1.2em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(130, 60, 133, 0.2);
+    border: 2px solid #582459;
 }
 
 a:hover {
-    background: #ffaf7b;
-    color: #333;
+    background: #a94a9c;
+    color: #130808;
     transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 10px rgba(130, 60, 133, 0.4);
 }
 
 /* Search Bar */
@@ -106,10 +109,10 @@ a:hover {
     border-radius: 25px;
     outline: none;
     text-align: center;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(130, 60, 133, 0.4);
     color: #fff;
     transition: 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(130, 60, 133, 0.3);
 }
 
 #searchBar::placeholder {
@@ -117,8 +120,8 @@ a:hover {
 }
 
 #searchBar:focus {
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    background: rgba(130, 60, 133, 0.6);
+    box-shadow: 0 6px 10px rgba(130, 60, 133, 0.4);
 }
 
 /* Games Container */
@@ -132,16 +135,16 @@ a:hover {
 }
 
 .game {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(130, 60, 133, 0.5);
     padding: 15px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(130, 60, 133, 0.3);
     transition: 0.3s;
 }
 
 .game:hover {
-    background: #ffaf7b;
+    background: #a94a9c;
     transform: scale(1.05);
 }
 
@@ -156,7 +159,7 @@ footer {
     margin-top: auto;
     text-align: center;
     padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(130, 60, 133, 0.5);
     width: 100%;
 }
 
@@ -165,71 +168,22 @@ footer p {
     font-size: 0.9rem;
 }
 
-.browser-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 30px;
-    width: 80%;
-    max-width: 900px;
-}
-
-#browserInput {
-    width: 80%;
-    max-width: 500px;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 10px;
-    border: none;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    outline: none;
-}
-
-#browserInput::placeholder {
-    color: #ddd;
-}
-
-button {
-    padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #ffaf7b;
-    color: black;
-}
-
-iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
 /* File Sharing Section */
 .file-sharing {
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(130, 60, 133, 0.5);
     padding: 30px;
     margin: 30px 0;
     border-radius: 15px;
     width: 80%;
     max-width: 900px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(130, 60, 133, 0.3);
 }
 
 .file-sharing h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #d1a3d8;
 }
 
 .file-sharing p {
@@ -240,7 +194,7 @@ iframe {
 input[type="file"] {
     padding: 10px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(130, 60, 133, 0.4);
     color: white;
     border: none;
     outline: none;
@@ -249,7 +203,7 @@ input[type="file"] {
 
 button {
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(130, 60, 133, 0.5);
     color: white;
     border: none;
     border-radius: 10px;
@@ -259,7 +213,7 @@ button {
 }
 
 button:hover {
-    background: #ffaf7b;
+    background: #a94a9c;
     color: black;
 }
 
@@ -276,13 +230,13 @@ ul li {
 ul li a {
     color: white;
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(130, 60, 133, 0.5);
     padding: 5px 10px;
     border-radius: 10px;
     transition: 0.3s;
 }
 
 ul li a:hover {
-    background: #ffaf7b;
+    background: #a94a9c;
     color: black;
 }
