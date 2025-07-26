@@ -1,274 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJEQ4HZT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M3NJEQ4HZT');
-</script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sigmi - Unblocked games and fun!" />
-  <meta name="keywords" content="unblocked games, online fun, Sigmi" />
-  <meta name="author" content="Sigmi Team" />
-  <title>Sigmi</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #120020;
-      color: #eee;
-    }
-
-    header {
-      padding: 2rem;
-      text-align: center;
-      background: #2d004d;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #a259ff;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    .navbar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: #1a0033;
-      padding: 0.5rem;
-      gap: 1rem;
-    }
-
-    .navbar a {
-      color: #caaaff;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      transition: background 0.3s;
-    }
-
-    .navbar a:hover {
-      background-color: #3d0066;
-    }
-
-    #searchBar {
-      display: block;
-      margin: 1rem auto;
-      padding: 0.5rem;
-      width: 80%;
-      max-width: 600px;
-      border: none;
-      border-radius: 5px;
-      background: #220040;
-      color: white;
-    }
-
-    .browser-container {
-      text-align: center;
-      padding: 1rem;
-    }
-
-    iframe {
-      border: 3px solid #4d0080;
-      border-radius: 8px;
-    }
-
-    .game-request-container {
-      background: #1a002d;
-      margin: 2rem auto;
-      padding: 2rem;
-      width: 90%;
-      max-width: 700px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px #4b0082;
-    }
-
-    .game-request-container h2 {
-      color: #d7aaff;
-    }
-
-    .game-request-container input,
-    .game-request-container textarea,
-    .game-request-container button {
-      display: block;
-      width: 100%;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 5px;
-      background: #2e004d;
-      color: white;
-    }
-
-    .game-request-container button {
-      background: #8000ff;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .game-request-container button:hover {
-      background: #aa00ff;
-    }
-
-    .games-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-    }
-
-    .game {
-      background: #2a004a;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      transition: transform 0.2s, background 0.3s;
-    }
-
-    .game a {
-      color: #d7b3ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .game:hover {
-      transform: scale(1.05);
-      background: #3d0066;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #2d004d;
-      color: #caaaff;
-      font-size: 0.9rem;
-    }
-  </style>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0J2BGJYQ4X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-0J2BGJYQ4X');
-  </script>
-</head>
-
-<body>
-  <header>
-    <h1>Sigmi Homepage</h1>
-    <p></p>
-  </header>
-
-  <nav class="navbar">
-    <a href="http://forum.whatthesigma.site" target="_blank">Forum</a>
-     <a href="https://oblivionexecutor.site" target="_blank">Oblivion</a>
-    <a href="https://10.185.184.1/html/banner.html/" target="_blank">Free Robux</a>
-  <a href="http://em35srx622tds4sgyg4dda5xm2azn6f6imvvcovgksfewat5gdyb3kid.onion/" target="_blank">DarkWeb Version</a>
-    <a href="https://proxy.whatthesigma.site" target="_blank">Holy Unblocker</a>
-   <a href="/links" target="_blank">Useful Links</a>
-    <a href="/contact" target="_blank">Contact</a>
-    
-  </nav>
-
-  <input type="text" id="searchBar" placeholder="Search games..." onkeyup="searchGames()" />
-
-  <section class="browser-container">
-    <iframe id="browserFrame" src="https://skibidi.loves.clubpenguin.club/math.html" width="100%" height="600"></iframe>
-  </section>
-
-  <section class="game-request-container">
-    <h2>Request a Game</h2>
-    <form action="https://formsubmit.co/33413dc044fbbc0e58ea1eeae66c9221" method="POST">
-      <label for="gameName">Game Name:</label>
-      <input type="text" id="gameName" name="gameName" required placeholder="Enter game name..." />
-
-      <label for="gameLink">Game Link (optional):</label>
-      <input type="text" id="gameLink" name="gameLink" placeholder="Provide a game link..." />
-
-      <label for="reason">Why do you want this game? (optional):</label>
-      <textarea id="reason" name="reason" placeholder="Tell us why you love this game..."></textarea>
-
-      <input type="hidden" name="_next" value="https://sigmi.whatthesigma.site" />
-      <input type="hidden" name="_captcha" value="false" />
-
-      <button type="submit">Submit Request</button>
-    </form>
-  </section>
-
-  <section class="games-container">
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/Precision-Client/" target="_blank">Minecraft Java</a></div>
-    <div class="game"><a href="/minecraft" target="_blank">Unblocked Minecraft Bedrock</a></div>
-    <div class="game"><a href="/slope" target="_blank">Slope</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/retrobowl/" target="_blank">Retro Bowl</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/bitlife/" target="_blank">Bit Life</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/drivemad/" target="_blank">Drive Mad</a></div>
-        <div class="game"><a href="https://amazingwebsitesupersigma.github.io/gunspin/" target="_blank">Gun Spin</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/rooftops/" target="_blank">Rooftop Snipers</a></div>
-    <div class="game"><a href="https://quiz-50.github.io/action-games/fnaf/" target="_blank">Five Nights at Diddy's</a></div>
-    <div class="game"><a href="https://quiz-50.github.io/strategy-games/ballistic/" target="_blank">Ballistic</a></div>
-    <div class="game"><a href="https://683771783-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.iFs_Bhrqdio.O%2Fd%3D1%2Frs%3DAHpOoo-IvlQWaLHZdUKQFbafXd_3OEvU9Q%2Fm%3D__features__" target="_blank">Extreme Racing</a></div>
-    <div class="game"><a href="https://quiz-50.github.io/driving-games/drift-boss/" target="_blank">Drift Boss</a></div>
-    <div class="game"><a href="https://quiz-50.github.io/action-games/gun-mayhem-2/" target="_blank">Gun Mayhem 2</a></div>
-    <div class="game"><a href="https://quiz-50.github.io/action-games/1v1lol/" target="_blank">1v1.lol</a></div>
-    <div class="game"><a href="https://lnahtml.github.io/a6/sausage-flip" target="_blank">Sausage Flip</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/timeshooter/" target="_blank">Time Shooter 3</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/osu/" target="_blank">OSU</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/tunnelrush/" target="_blank">Tunnel Rush</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/tinyfishing/" target="_blank">Tiny Fishing</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/idlebreakout/" target="_blank">Idle Breakout</a></div>
-    <div class="game"><a href="/cookieclicker" target="_blank">Slow Roads</a></div>
-    <div class="game"><a href="/motox3mwinter" target="_blank">Moto X3M</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/geodash/" target="_blank">Geometry Dash</a></div>
-    <div class="game"><a href="https://sigmasigmapd2mods.github.io/subwaysurfers/" target="_blank">Subway Surfers</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/basketrandom/" target="_blank">Basket Random</a></div>
-     <div class="game"><a href="https://amazingwebsitesupersigma.github.io/fnf/" target="_blank">Friday Night Funkin</a></div>
-    <div class="game"><a href="/stickmanhook" target="_blank">Stickman Hook</a></div>
-    <div class="game"><a href="https://sigmasigmapd2mods.github.io/2048/" target="_blank">2048</a></div>
-   <div class="game"><a href="https://sigmasigmapd2mods.github.io/choppy-orc/" target="_blank">Choppy Orc</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/basketballstars/" target="_blank">Basketball Stars</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/tanukisunset/" target="_blank">Tanuki Sunset</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/cookieclicker/" target="_blank">Cookie Clicker</a></div>
-    <div class="game"><a href="https://ezunblocktheopps.github.io/ezunblocktheopp.github.io/" target="_blank">CSGO Clicker</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/dogeminer/" target="_blank">Doge Miner</a></div>
-    <div class="game"><a href="https://amazingwebsitesupersigma.github.io/hittrump/" target="_blank">Hit Trump</a></div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Sigmi Team</p>
-  </footer>
-
-  <script>
-    function searchGames() {
-      let input = document.getElementById('searchBar').value.toLowerCase();
-      document.querySelectorAll('.game').forEach(game => {
-        game.style.display = game.textContent.toLowerCase().includes(input) ? 'block' : 'none';
-      });
-    }
-
-    function loadWebsite() {
-      let url = document.getElementById('browserInput')?.value.trim();
-      if (url) {
-        if (!url.startsWith("http://") && !url.startsWith("https://")) {
-          url = "https://" + url;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Files Have Been Encrypted</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #3a3a3a 0%, #6c6c6c 50%, #b8b8b8 70%, #eaeaea 100%);
+            color: #3a2c1a;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            height: 100vh;
+            margin: 0;
         }
-        document.getElementById('browserFrame').src = "https://proxy-rs52.onrender.com/proxy/" + encodeURIComponent(url);
-      }
-    }
-  </script>
+        .container {
+            background: rgba(245,241,235,0.96);
+            border: 2px solid #8c7b6b;
+            border-radius: 0;
+            padding: 7vh 10vw;
+            box-shadow: none;
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 2vh;
+            color: #3a2c1a;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 2vh;
+            color: #6c6c6c;
+        }
+        .warning {
+            color: #fff;
+            background: linear-gradient(90deg, #6c6c6c 0%, #b8b8b8 100%);
+            padding: 2vh 4vw;
+            border-radius: 12px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 3vh;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+        .btc {
+            font-size:1.5em;
+            color:#3a2c1a;
+            background:#eaeaea;
+            padding:1vh 2vw;
+            border-radius:8px;
+            border: 2px solid #8c7b6b;
+            margin-bottom: 2vh;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .footer {
+            color: #8c7b6b;
+            font-size: 1.2em;
+            margin-top: 3vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="warning">Your Files Have Been Encrypted</div>
+        <h1>Access to Your Files Has Been Temporarily Suspended</h1>
+        <p>We regret to inform you that your documents, photos, and other files have been encrypted for security reasons.</p>
+        <p>To restore access, please remit <b>0.00138729 Bitcoin</b> to the following address:</p>
+        <div class="btc">bc1pmhmpwrpanllk9ynk0vwpv7j0zdtxjg85swkpvvt7hny623f848lss32xxa</div>
+        <p>Once payment is complete, kindly send confirmation to <b>toiletoman@proton.me</b>.</p>
+        <p>Failure to comply within <b>48 hours</b> will result in permanent loss of your data.</p>
+        <div class="footer">This is an automated message. Please do not power off your device until resolution.</div>
+    </div>
 </body>
 </html>
